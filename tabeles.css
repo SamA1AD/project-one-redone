@@ -1,0 +1,25 @@
+body{
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  color: var(--text-clr);
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(5, 20%);
+}
+
+table, th, td{
+  border: 1px solid rgb(207, 154, 6);
+  margin: 10px;
+  grid-area: 2/ 1/ 5/ 6;
+  text-align: center;
+}
+
+table{
+  backdrop-filter: blur(12px) saturate(183%);
+  -webkit-backdrop-filter: blur(12px) saturate(183%);
+  background-color: rgba(7, 109, 156, 0.3);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  transition: transform 0.5s ease-in-out;
+}
